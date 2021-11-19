@@ -1,15 +1,15 @@
 import { getBusinesses } from "./database.js";
+import { Business } from "./Business.js"
 
-const businesses = getBusinesses()
+const contentTarget = document.querySelector(".supplies")
 
+const BusinessList = () => {
+    const businessesArray = getBusinesses()
+    contentTarget.innerHTML = "<h1>Customer List</h1>"
 
-export const BusinessList = () => {
-    let html = '<ul>'
-
-    for (const business of businesses) {
-        html += `<li>${business.purchasingAgent.nameFirst}</li>`
-    }
-
-    html += '</ul>'
-    return html
+    businessesArray.forEach(
+        (businessObject) => {
+            contentTarget.innerHTML += Supply(businessObject)
+        }
+    );
 }
