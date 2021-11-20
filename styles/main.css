@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.details {
+    margin-top: 25px;
+    padding: 0 20px;
+
+}
+
+li {
+    list-style: none;
+    margin: 25px 0;
+    border-bottom: 2px inset lightgray;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+
+#container {
+    padding: 5px;
+}
+
+.business_type {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.business_address {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
